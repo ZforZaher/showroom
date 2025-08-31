@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    
+    font-family: 'Playfair Display', serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #C5A880; */
+    background: radial-gradient(circle at center, #1A1A1A 0%, #0D0D0D 100%);
+}
+h1{
+    margin-top: 40px;
+    font-size: 3rem;
+    color: #C5A880;
+}
+.overlay{
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    width: 80%;
+}
+.pic img{
+    border: 1px solid #C5A880;
+    transition: transform 0.5s ease;
+}
+.pic{
+    cursor: pointer;
+}
+.pic:hover img {
+    transform: scale(1.05);
+}
+.photo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.7) ;
+}
+.photo .box{
+    width: 80%;
+    height: 80%;
+    background-image: url('images/phantom.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo .box i{
+    color: #ebe4e4;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 15px;
+}
+.photo .box #closeBtn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    font-size: 2rem;
+}
